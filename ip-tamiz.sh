@@ -241,9 +241,9 @@ Set_iptables(){
 	fi
 }
 Update_Shell(){
-	sh_new_ver=$(wget --no-check-certificate -qO- -t1 -T3 "https://raw.githubusercontent.com/opiran01/IP-Tamiz/main/ip-tamiz.sh"|grep 'sh_ver="'|awk -F "=" '{print $NF}'|sed 's/\"//g'|head -1)
+	sh_new_ver=$(wget --no-check-certificate -qO- -t1 -T3 "https://raw.githubusercontent.com/OPIran-CluB/IP-Tamiz/main/ip-tamiz.sh"|grep 'sh_ver="'|awk -F "=" '{print $NF}'|sed 's/\"//g'|head -1)
 	[[ -z ${sh_new_ver} ]] && echo -e "${Error} unable to link to Github !" && exit 0
-	wget -N --no-check-certificate "https://raw.githubusercontent.com/opiran01/IP-Tamiz/main/ip-tamiz.sh" && chmod +x iptables-pf.sh
+	wget -N --no-check-certificate "https://raw.githubusercontent.com/OPIran-CluB/IP-Tamiz/main/ip-tamiz.sh" && chmod +x iptables-pf.sh
 	echo -e "The script has been updated to the latest version[ ${sh_new_ver} ] !(Note: Because the update method is to directly overwrite the currently running script, some errors may be prompted below, just ignore it)" && exit 0
 }
 check_sys
