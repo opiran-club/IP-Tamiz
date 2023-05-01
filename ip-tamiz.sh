@@ -16,7 +16,7 @@ Tip="${Green_font_prefix}[Notice]${Font_color_suffix}"
 
 check_iptables(){
 	iptables_exist=$(iptables -V)
-	[[ ${iptables_exist} = "" ]] && echo -e "${Error} 没有安装iptables，请检查 !" && exit 1
+	[[ ${iptables_exist} = "" ]] && echo -e "${Error} Not installed iptables，Check, please !" && exit 1
 }
 check_sys(){
 	if [[ -f /etc/redhat-release ]]; then
@@ -93,7 +93,7 @@ Set_forwarding_type(){
  1. TCP
  2. UDP
  3. TCP+UDP\n"
-	read -e -p "(默认: TCP+UDP):" forwarding_type_num
+	read -e -p "(default: TCP+UDP):" forwarding_type_num
 	[[ -z "${forwarding_type_num}" ]] && forwarding_type_num="3"
 	if [[ ${forwarding_type_num} == "1" ]]; then
 		forwarding_type="TCP"
@@ -248,7 +248,7 @@ Update_Shell(){
 }
 check_sys
 echo && echo -e " iptables Port forwarding one-click management script ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
-  -- Toyo | doub.io/wlzy-20 --
+  -- OPIran | @opiranv2rayproxy --
   
  ${Green_font_prefix}0.${Font_color_suffix} Upgrade script
 ————————————
