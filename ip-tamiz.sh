@@ -248,7 +248,7 @@ Update_Shell(){
 }
 check_sys
 echo && echo -e " iptables Port forwarding one-click management script ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
-  -- OPIran | @opiranv2rayproxy --
+  -- OPIran-CluB | @opiranv2rayproxy --
   
  ${Green_font_prefix}0.${Font_color_suffix} Upgrade script
 ————————————
