@@ -1,6 +1,6 @@
 # IP-Tamiz & IPtable Auto Script
-creating your own ip tamiz cloudflare
-
+creating your own CDN IP cloudflare
+its useful for V2ray configs behind CDN
 
 # iptable Auto Script
 
