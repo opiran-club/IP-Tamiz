@@ -1,4 +1,4 @@
-# IP-Tamiz
+# IP-Tamiz & IPtable Auto Script
 creating your own ip tamiz cloudflare
 
 
