@@ -2,8 +2,10 @@
 creating your own ip tamiz cloudflare
 
 
-# ip-tamiz
+# iptable Auto Script
 
+Debian Based and CentOS 
+after update and upgrade VPS copy below script and paste it to VPS
 با دستور زیر اول اسکریپت را داخل سرور خود نصب کنید
 
 ``` bash
@@ -24,7 +26,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/OPIran-CluB/IP-
 
 درنهایت Port forwarding مشخص برای شما فعال می‌شود
 
-
+To run script again just write below 
   با دستور زیر اجرا کنید دوباره اسکریپت
 ``` bash
 bash ip-tamiz.sh
